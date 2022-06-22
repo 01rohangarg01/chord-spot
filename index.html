@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chord-Spot</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="svgintpiano.css">
+</head>
+
+<body>
+<label id="chord-spot"><h1><a href="/index.html">CHORD SPOT</a></h1></label>
+
+<div id="piano-container"></div>
+
+[ <span id="printnotes"></span> ] = <span id="printchord"></span>
+
+<script src="https://cdn.jsdelivr.net/npm/@tonaljs/tonal/browser/tonal.min.js"></script>
+<script src="svgintpiano.js"></script> 
+<script src="index.js"></script> 
+<script>
+
+var low = 12;
+var high = 23;
+var note_names = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+var rect_index = [0, 7, 1, 8, 2, 3, 9, 4, 10, 5, 11, 6];
+var piano = new SVGIntPiano("piano-container", {
+  lowNote: low,
+  highNote: high,
+});
+
+piano.subscribe("keyon", (mn)=> {
+    let index = mn - low;
+    toggleNote(note_names[index]);
+
+    let rect = piano.svg.children[rect_index[index]];
+    rect.setAttribute("style", oparr.includes(note_names[index]) ? "fill:lightblue" : "");
+});
+</script>
+</body>
+</html>

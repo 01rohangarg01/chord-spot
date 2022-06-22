@@ -1,0 +1,25 @@
+a{
+    text-decoration: none;
+    color:rgb(24, 64, 140);
+    text-shadow: 2.5px 1px 1px grey;
+}
+
+#enternotes{
+    font-size: 17px;
+}
+
+button{
+    margin-left: 163px;
+    margin-top: 10px;
+}
+area{
+    cursor: pointer;
+}
+img{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: 0 auto;
+    float: left;
+    border-radius: 10px;
+}
