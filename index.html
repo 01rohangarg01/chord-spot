@@ -59,8 +59,8 @@
 <div id="piano-container"></div>
 <br>
 <div id="yournotes">Entered notes - [ <span id="printnotes"></span> ] </div> 
-
-<span id="printchord"></span>
+<br>
+<b><span id="printchord"></span></b>
 
 <script src="https://cdn.jsdelivr.net/npm/@tonaljs/tonal/browser/tonal.min.js"></script>
 <script src="svgintpiano.js"></script> 
@@ -81,7 +81,12 @@ piano.subscribe("keyon", (mn)=> {
     toggleNote(note_names[index]);
 
     let rect = piano.svg.children[rect_index[index]];
-    rect.setAttribute("style", oparr.includes(note_names[index]) ? "fill:lightblue" : "");
+    rect.setAttribute("style", oparr.includes(note_names[index]) ? "fill:lightskyblue" : "");
+
+    let noteline_svg = document.getElementById("noteline").children[0];
+    let g = noteline_svg.children[index];
+    let recat = g.children[0];
+    recat.setAttribute("style", oparr.includes(note_names[index]) ? "fill:lavender" : "")
 });
 </script>
 </body>
