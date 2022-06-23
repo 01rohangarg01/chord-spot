@@ -9,14 +9,14 @@
   
   .svgkey_on {
     stroke: black;
-    fill: red;
+    fill: lightblue;
     stroke-width: 0.5px;
     rx: 2;
   }
   
   .svgkey_off:hover {
     stroke: black;
-    fill: lightblue;
+    fill: lightgray;
     stroke-width: 0.5px;
   }
   
@@ -29,13 +29,19 @@
   
   .svgkey_black_on {
     stroke: black;
-    fill: red;
+    fill: lightblue;
     stroke-width: 0.5px;
     rx: 2;
   }
   
   .svgkey_black_off:hover {
     stroke: black;
-    fill: lightblue;
+    fill: lightgray;
+    stroke-width: 0.5px;
+  }
+
+  .linenotes{
+    stroke: black;
+    fill: white;
     stroke-width: 0.5px;
   }

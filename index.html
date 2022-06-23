@@ -9,12 +9,58 @@
     <link rel="stylesheet" type="text/css" href="svgintpiano.css">
 </head>
 
-<body>
-<label id="chord-spot"><h1><a href="/index.html">CHORD SPOT</a></h1></label>
+<body id="bodyfull">
 
+<div id="chord-spot"><h1><a href="/index.html">CHORD SPOT</a></h1></div>
+
+<pre id="selectline">  Select your notes to get the desired chord</pre>
+
+<div id="noteline">
+  <svg width="500" height = "26">
+  <g>
+    <rect width="28.28571428571429" height="24" y="1" class="linenotes"></rect>
+    <text x="19" y="18" font-family="Verdana" font-size="15" fill="black">C</text>  
+  </g><g>
+    <rect width="28.28571428571429" height="24"  y="1" class="linenotes"></rect>
+    <text x="60" y="18" font-family="Verdana" font-size="15" fill="black">C#</text>  
+  </g><g>
+    <rect width="28.28571428571429" height="24" x="93.1" y="1" class="linenotes"></rect>
+    <text x="99" y="18" font-family="Verdana" font-size="15" fill="black">D</text>  
+  </g><g>
+    <rect width="28.28571428571429" height="24" x="126.5" y="1" class="linenotes"></rect>
+    <text x="130" y="18" font-family="Verdana" font-size="15" fill="black">D#</text>  
+  </g><g>
+    <rect width="28.28571428571429" height="24" x="171.1" y="1" class="linenotes"></rect>
+    <text x="180" y="18" font-family="Verdana" font-size="15" fill="black">E</text>  
+  </g><g>
+    <rect width="28.28571428571429" height="24" x="5.1" y="1" class="linenotes"></rect>
+    <text x="232" y="18" font-family="Verdana" font-size="15" fill="black">F</text>  
+  </g><g>
+    <rect width="28.28571428571429" height="24" x="5.1" y="1" class="linenotes"></rect>
+    <text x="273" y="18" font-family="Verdana" font-size="15" fill="black">F#</text>  
+  </g><g>
+    <rect width="28.28571428571429" height="24" x="5.1" y="1" class="linenotes"></rect>
+    <text x="310" y="18" font-family="Verdana" font-size="15" fill="black">G</text>  
+  </g><g>
+    <rect width="28.28571428571429" height="24" x="5.1" y="1" class="linenotes"></rect>
+    <text x="341" y="18" font-family="Verdana" font-size="15" fill="black">G#</text>  
+  </g><g>
+    <rect width="28.28571428571429" height="24" x="5.1" y="1" class="linenotes"></rect>
+    <text x="382" y="18" font-family="Verdana" font-size="15" fill="black">A</text>  
+  </g><g>
+    <rect width="28.28571428571429" height="24" x="5.1" y="1" class="linenotes"></rect>
+    <text x="412" y="18" font-family="Verdana" font-size="15" fill="black">A#</text>  
+  </g><g>
+    <rect width="28.28571428571429" height="24" x="5.1" y="1" class="linenotes"></rect>
+    <text x="461" y="18" font-family="Verdana" font-size="15" fill="black">B</text>  
+  </g>
+  </svg>
+</div>
 <div id="piano-container"></div>
+<br>
+<div id="yournotes">Entered notes - [ <span id="printnotes"></span> ] </div> 
 
-[ <span id="printnotes"></span> ] = <span id="printchord"></span>
+<span id="printchord"></span>
 
 <script src="https://cdn.jsdelivr.net/npm/@tonaljs/tonal/browser/tonal.min.js"></script>
 <script src="svgintpiano.js"></script> 

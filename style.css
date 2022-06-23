@@ -1,25 +1,99 @@
+#bodyfull{
+    background-color:whitesmoke;
+    margin: 0%;
+}
+
+
 a{
     text-decoration: none;
-    color:rgb(24, 64, 140);
-    text-shadow: 2.5px 1px 1px grey;
+    color:white;
+    text-shadow: 2.5px 1px 1px black;
+    display: inline-block;
+    padding-top: 10px;    
 }
 
-#enternotes{
-    font-size: 17px;
+#yournotes{
+text-align: center;
+font-family: Bahnschrift; 
+    font-size: 17px; 
 }
 
-button{
-    margin-left: 163px;
-    margin-top: 10px;
+#chord-spot{
+    background-color:steelblue;
+    font-size: 150%;
+    width: 110;
+    text-align: center;
+    position: relative;
+    top: -32px;
+    padding: 1px;
+    
 }
-area{
-    cursor: pointer;
+
+#piano-container{
+    text-align: center;
+    size: 200%;
 }
-img{
-    width: 50%;
-    height: 50%;
+
+#noteline{
+    text-align: center;
+}
+
+#printchord{
     display: block;
-    margin: 0 auto;
-    float: left;
-    border-radius: 10px;
+    text-align: center;
+font-family: Bahnschrift; 
+    font-size: 17px; 
+}
+/* area{
+    cursor: pointer; 
+} */
+
+
+#selectline{
+    font-family: Bahnschrift; 
+    font-size: 21px; 
+    color:midnightblue;
+}
+/* #piano-cotainer{
+    display: block;
+    position: relative;
+    left: 50%;
+} */
+
+/* #printchord{
+    font-family: Arial;
+    font-size: 60px;
+    opacity: 1;
+    transition: opacity 2s;
+}
+#test p {
+    opacity: 0;
+    font-size: 21px;
+    margin-top: 25px;
+    text-align: center;
+
+    -webkit-transition: opacity 2s ease-in;
+       -moz-transition: opacity 2s ease-in;
+        -ms-transition: opacity 2s ease-in;
+         -o-transition: opacity 2s ease-in;
+            transition: opacity 2s ease-in;
+}
+
+#test p.load {
+    opacity: 1;
+} */
+
+#printchord {
+	animation: fadeInAnimation ease 3s
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
